@@ -1,0 +1,13 @@
+<h3 style="text-align:center;color: rgb(97, 97, 97);">UME</h3>
+<div style="display: block">
+    <canvas baseChart
+            [datasets]="ChartData" 
+            [labels]="ChartLabels" 
+            [options]="ChartOptions"
+            [colors]="ChartColors" 
+            [legend]="ChartLegend" 
+            [chartType]="ChartType" 
+            [plugins]="ChartPlugins"
+            (chartHover)="chartHovered($event)"
+            (chartClick)="chartClicked($event)"></canvas>
+    </div>
